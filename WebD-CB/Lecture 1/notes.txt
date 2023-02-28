@@ -1,0 +1,19 @@
+JS books:- (main)Eloquent JS(online), You don't know JS(after 1st book)
+HTML, CSS:- W3Schools, MDN(bible)
+-------------------------------------------------------------
+Semantic Code:- Tell whatever we're writing on our web page what exactly it is.
+
+Viewport:- Visible browser screen
+
+headings: h1, h2, h3, h4, h5, h6
+
+Block elements vs Inline elements:-
+Block:- Takes the entire viewport width(eg:- p, div, li, ul, ol)
+Inline:- Takes the space that is required(eg:- span)
+
+List: 
+    -unordered list(ul)
+    -ordered list(ol)
+
+Attributes:- For an element, attributes are qualities that we can alter
+Like for ol, type and start are attributes. start takes numerical value always.

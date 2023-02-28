@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0
+}
+
+.parent{
+    width:60%;
+    border:1px solid black;   
+    margin:auto;   
+}
+
+.div{
+    border:1px solid black;
+    margin:10px auto;
+    width:70%;
+}
+
+img{
+    border-radius: 10px;
+    width:30%;
+    float:left;
+}
+
+p{
+    float:right;
+    width:70%;
+}
+/* 
+.clearFix{
+    clear:both;
+} */
+
+/* 2nd way of clearing fixes */
+/* It kind of puts a block element with no content and property
+clear:both */
+.div1::after{
+    content:"";
+    clear:both;
+    display:block;
+}

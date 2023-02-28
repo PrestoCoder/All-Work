@@ -1,0 +1,10 @@
+- Query String Attribute:-
+Part of url, which is a kind of a query to the database, telling it what to get
+More On google.
+But for some websites the key is not visible, which can be put in 'name' attribute of input element.
+
+- Semantic tags can be either block or inline.
+ They also come with intrinsic margin and padding.
+
+ CSS:-
+ 

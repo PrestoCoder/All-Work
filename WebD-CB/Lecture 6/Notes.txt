@@ -1,0 +1,22 @@
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+-Flexbox-To arrange items on our webpage hassle free.
+-Used for 1 dimensional layouting.
+-We can't give inline elements height, width and margin.
+-For applying these properties with inline behaviour, we use inline-block.
+-The container's whose elements I want to be flexbox, needs to be given display flexbox;
+-By default, elements keep getting added along main axis in flexbox.
+-To keep adding, it'll compress the child elements, and even flow outside the parent itself.
+-If we give flex-wrap:wrap to flex container, the overflowing elements will move down.
+Note***
+-Any element given constant width (in px, cm, not in %) will remain of that width even when window size is decreased.
+-If this happens, when viewport width is reduced, container's width will not reduce, and hence wrapping won't occur.
+-Thus, to make wrapping happen responsively, container's width needs to be set in terms of vw or %.
+--Justify-content:- Aligns items along the main axis.
+--Align-content - Disregards height of the container, and moves items to center(y) or end, disregarding the remaining space.
+--Align-items - Analogue of Justify-content for cross axis(y).
+
+-Padding can increase width and height. To avoid that, use box-sizing:border box.
+-Don't use background-image with flex, as it disregards it while deciding the size of any child element in the flex container.
+
+

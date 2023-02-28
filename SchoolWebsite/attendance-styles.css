@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* aside */
+
+aside{
+    height:100%;
+    width:15%;
+    background-color:#AED3B8;
+    position:fixed;
+    color: white;
+    text-align: center;
+}
+
+aside h2{
+    margin-top:18px;
+}
+
+aside menu{
+    margin-top:100px;
+    font-size: 20px;
+}
+
+aside menu li{
+    padding:5%;
+    background-color:#4D9064;
+    margin: 10px auto;
+    width:80%
+}
+
+aside menu a:link, aside menu a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+/* main body */
+
+.main-body{
+    margin-left:15%;
+}
+
+main{
+    padding:5%;
+    /* border: solid black 5px; */
+}
+
+/* top nav */
+.top-nav{
+    height:50px;
+    background-color:#87B9B0;
+    position:sticky;
+    top:0;
+}
+
+.attend-options{
+    background-color: white;
+    max-width: 70%;
+    min-width:350px;
+    margin:0  auto;
+    border-radius: 15px;
+    position:sticky;
+    top:10;
+    border: solid rgb(221, 238, 217) 3px;
+}
+
+.attend-options form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form div{
+    padding:2%;
+    font-size:1.05rem;
+    color:#4D9064;
+}
+
+/* Attendance Options */
+form div label{
+    padding:5px 0;
+}
+
+#date-of-attendance{
+    background-color: white;
+    color:#84bd98;
+    padding:10px 20px;
+    border-radius: 5px;
+    border:#84bd98 solid 2px;
+    margin:0 auto;
+    display:block;
+    font-size:1rem;
+}
+#attendance-file{
+    font-weight: 500;
+    background-color: #f1e4e0;
+    color:#c44d1e;
+    padding:0;
+    margin:0 auto;
+    display:block;
+    border-radius: 5px;
+    font-size:1rem;
+    border:none;
+}
+
+/* Attendance Table */
+table{
+    margin-top:30px;
+    width:100%;
+    text-align: center;
+    font-weight: 800;
+    color:rgba(0, 0, 0, 0.63);
+}
+
+thead{
+    background-color:#d2919163
+}
+
+tr:nth-child(even){
+    background-color: #d9d9d962;
+}
+
+.student-attendance-table td{
+    border:none;
+    padding:2px;
+}
+
+.att-sub-btn{
+    text-align: end;    
+    padding:0;
+    margin-top:20px;
+}
+
+.att-sub-btn button{
+    font-size:1rem;
+    color:white;
+    padding:15px;
+    background-color: #43A7A7;
+    border:none;
+}
+
+#edit-btn{
+    background-color: #F36BBE;
+    padding:15px 25px;
+}

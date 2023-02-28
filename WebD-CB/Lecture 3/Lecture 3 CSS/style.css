@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+header{
+    background-color: blue;
+    color:white;
+}
+main{
+    background-color: green;
+    color:white;
+    /* padding:10px; */
+}
+figure{
+    background-color: purple;
+    width:300px;
+    border: 10px black solid;
+    border-radius: 15px;
+}
+
+/* All elements with their attribute text get styled- Can give only 1 attribute at once */
+input[type="text"], input[type="password"]{
+    background-color: pink;
+}

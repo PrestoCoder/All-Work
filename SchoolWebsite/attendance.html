@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="attendance-styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <title>Attendance</title>
+</head>
+<body>
+    <aside>
+        <h2>DPS Dwarka</h2>
+        <menu>
+            <ul>
+                <li>
+                    <a href="#">Section</a> 
+                </li>
+                <li>
+                    <a href="#">Attendance</a> 
+                </li>
+                <li>
+                    <a href="#">Marks</a> 
+                </li>
+                <li>
+                    <a href="#">Analytics</a> 
+                </li>
+            </ul>
+        </menu>
+    </aside>
+    <section class="main-body">
+        <header>
+            <nav class="top-nav">
+
+            </nav>
+        </header>
+        <main>
+            <section class="attend-options">
+                <form action="get" method="">
+                    <div>
+                        <label for="date-of-attendance">Choose date of attendance</label>
+                        <input type="date" name="date-of-attendance" id="date-of-attendance">
+                    </div>
+                    <div>
+                        <label for="attendance-file">Upload .csv/.xlx</label>
+                        <input type="file" name="attendance-file" id="attendance-file">
+                    </div>
+                    
+                </form>
+            </section>
+            <section class="student-attendance-table">
+                <form action="get" method="#">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Roll No.</th>
+                                <th>Name</th>
+                                <th>Present</th>
+                                <th>Absent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Hrithik Nirash</td>
+                                <td><input type="radio" name="attend-1" class="present"></td>
+                                <td><input type="radio" name="attend-1" class="absent"></td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>Hrithik Nirash</td>
+                                <td><input type="radio" name="attend-2" class="present"></td>
+                                <td><input type="radio" name="attend-2" class="absent"></td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>Hrithik Nirash</td>
+                                <td><input type="radio" name="attend-3" class="present"></td>
+                                <td><input type="radio" name="attend-3" class="absent"></td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>Hrithik Nirash</td>
+                                <td><input type="radio" name="attend-4" class="present"></td>
+                                <td><input type="radio" name="attend-4" class="absent"></td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>Hrithik Nirash</td>
+                                <td><input type="radio" name="attend-5" class="present"></td>
+                                <td><input type="radio" name="attend-5" class="absent"></td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>Hrithik Nirash</td>
+                                <td><input type="radio" name="attend-6" class="present"></td>
+                                <td><input type="radio" name="attend-6" class="absent"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="att-sub-btn">
+                        <button type="submit">Submit Attendance</button>
+                        <button id="edit-btn" disabled="disabled">Edit</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </section>
+</body>
+</html>

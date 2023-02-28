@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main-body{
+    margin-left:14%;
+}
+
+main{
+    font-size:15px;    
+}
+
+aside{
+    position:fixed;
+    background-color:#AED3B8;
+    height:100%;
+    width:14%
+}
+
+aside menu .btn{
+    background-color:#4D9064;
+    color:#FFFFFF;
+    margin: 20px 15px;
+    font-size: large;
+}
+
+aside menu .btn:hover{
+    background-color: #43A7A7;
+    color:white
+}
+
+aside menu div a{
+    background-color:#b4db24!important;
+}
+
+
+aside menu div a:hover{
+    background-color:#54920e!important;
+}
+
+header nav{
+    background-color:#87B9B0;
+}
+
+#filter-plate{
+    background-color: #f8f8b4;
+}

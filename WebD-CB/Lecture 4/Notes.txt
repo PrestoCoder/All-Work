@@ -1,0 +1,19 @@
+New things taught:-
+active, link, hover, visited
+
+> - immediate child
++ - immediate siblings:-
+
+li + li
+
+Eg:-
+
+li
+li - immediate sibling of above, hence counted
+li - immediate sibling of above, hence counted
+div
+li immediate sibling of above, but not of li, of div, hence not counted.
+
+~ - general siblings
+li + li
+All li's after the first li are targeted. Even the one after div.

@@ -1,0 +1,21 @@
+CSS Priority:-
+https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps, then below
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
+
+Inline CSS > Internal CSS > External CSS
+
+-Universal selector:- '*'
+-Selector:- 
+    -Class:- '.'
+    -ID:-    '#'
+
+-Priority:- Highest to lowest(Assuming same type of css(inline, internal or external))
+ID
+Class
+Attribute
+Element
+Universal
+
+- Can target multiple elements at once using ',' comma separation.
+
+

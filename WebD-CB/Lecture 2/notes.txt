@@ -1,0 +1,28 @@
+-Due to web crawlers, there should be 1 h1 and multiple h2s and h3s
+
+- target="_blank" in <a></a> opens it in new tab
+By default, its target="_self"
+
+- Client usually doesn't act as server, but server can act as client.
+
+- Forms help us request data from server.
+
+- "disabled" - Disables entering form
+
+- To allow for one radio button to de-select after another has been selected,
+
+- required - Using this attribute, if not filled, gives validation error
+
+- for in label: Now when label is clicked, the element whose ID is given in for is selected- For there to be only 1 selection allowed in radio buttons, we need to put the name attribute only, and that too the same for all the radio buttons we need to work with.
+
+- Method:-
+Tells what the form will do, get-request or post-request
+get:- Getting something from the server
+post:- Posting something onto the server
+
+- Actions:-
+Path where the form needs to be submitted. 
+
+- If the div containing the image is given height or width, the image won't take up its height or width
+
+- iframe allows to embed entire websites and youtube videos.

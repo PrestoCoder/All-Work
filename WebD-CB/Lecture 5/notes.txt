@@ -1,0 +1,22 @@
+css box model:-
+-Margin:- margin auto doesn't work for inline elements
+-Vertical margins collapse.
+
+- float property takes elements out of the parent.
+- Usually used to place elements next to each other.
+- If both elements taken out, parent collapses.
+- Also, in our example, p goes below img
+- This is because p retains its width of 100%
+- If we reduce its width, it'll go beside the image.
+
+- If we only took image outside parent using float, 
+the text would've wrapped around it.
+
+- If we put another element in parent and make it clear, 
+it makes parent assume that its children are still inside it, hence it doesn't collapse.
+If there are 2 elements that are floating, clear both.
+If floating on the right only, clear left, otherwise clear right.
+
+- Instead of the above, we can clear using the pseudo element
+::after method. It kind of does the same thing as above,
+only it saves us from declaring a less useful div.
