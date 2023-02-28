@@ -18,5 +18,5 @@ Note***
 
 -Padding can increase width and height. To avoid that, use box-sizing:border box.
 -Don't use background-image with flex, as it disregards it while deciding the size of any child element in the flex container.
-
+Blah blah
 
