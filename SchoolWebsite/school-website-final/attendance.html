@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="attendance.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar-aside">
+            <div class="navbar-school-title">
+                <h2>School of Excellence</h2>
+            </div>
+        </div>
+        <div class="navbar-main">
+            <div class="search-bar">
+                <form action="get">
+                    <input placeholder="search" type="search" name="search-student" id="search-student">
+                    <button type="submit">search</button>
+                </form>
+            </div>
+            <div class="navbar-menu">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+    <div class="main-body">
+        <aside class="main-aside">
+            <div class="main-aside-menu">
+                <ul>
+                    <li>
+                        <a href="#"><h4>Section</h4></a>
+                    </li>
+                    <li>
+                        <a href="#"><h4>Attendance</h4></a>
+                    </li>
+                    <li>
+                        <a href="#"><h4>Marks</h4></a>
+                    </li>
+                    <li>
+                        <a href="#"><h4>Analytics</h4></a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main class="main-body-main">
+            <section class="filtering-panel">
+                <h3>Filter by Tag</h3>
+                <form action="get" class="filter-panel-form">
+                    <div class="date-of-attendance">
+                        <label for="date-of-attendance">Attendance</label>
+                        <input type="date" name="date-of-attendance" id="date-of-attendance">
+                    </div>
+                    <div class="file-upload">
+                        <label for="file-upload">Upload .csv/.xlx</label>
+                        <input type="file" name="file-upload" id="file-upload" disabled>
+                    </div>
+                    <div class="submit-filtering-choice">
+                        <button type="submit" disabled>Submit</button>
+                    </div>
+                </form>
+            </section>
+            <section class="student-data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Roll No.</th>
+                            <th>Name</th>
+                            <th>Present</th>
+                            <th>Absent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Hrithik Nirash</td>
+                            <td><input type="radio" name="attend-1" class="present"></td>
+                            <td><input type="radio" name="attend-1" class="absent"></td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Hrithik Nirash</td>
+                            <td><input type="radio" name="attend-2" class="present"></td>
+                            <td><input type="radio" name="attend-2" class="absent"></td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Hrithik Nirash</td>
+                            <td><input type="radio" name="attend-3" class="present"></td>
+                            <td><input type="radio" name="attend-3" class="absent"></td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Hrithik Nirash</td>
+                            <td><input type="radio" name="attend-4" class="present"></td>
+                            <td><input type="radio" name="attend-4" class="absent"></td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Hrithik Nirash</td>
+                            <td><input type="radio" name="attend-5" class="present"></td>
+                            <td><input type="radio" name="attend-5" class="absent"></td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Hrithik Nirash</td>
+                            <td><input type="radio" name="attend-6" class="present"></td>
+                            <td><input type="radio" name="attend-6" class="absent"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="attendance-submit-panel">
+                <div class="att-sub-btn">
+                    <button type="submit">Submit Attendance</button>
+                </div>
+                <div class="att-edit-btn">
+                    <button id="edit-btn" disabled="disabled">Edit</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

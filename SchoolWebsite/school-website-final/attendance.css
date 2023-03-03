@@ -126,3 +126,15 @@ tr:nth-child(even){
     background-color: rgb(230, 230, 230);
 }
 
+.attendance-submit-panel{
+    padding:15px;
+    border: 1px solid blue;
+    display:flex;
+    justify-content: right;
+    flex-direction: row;
+}
+
+.attendance-submit-panel div button{
+    padding:10px;
+    margin:0 10px;
+}
