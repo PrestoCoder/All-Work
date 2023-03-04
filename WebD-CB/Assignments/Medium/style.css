@@ -1,0 +1,221 @@
+*{
+    padding:0;
+    margin:0;
+    /* border: black 1px solid; */
+}
+
+/* Top Nav */
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 100px;
+    background-color: rgb(255, 192, 23);
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    border-bottom:1px solid black;
+}
+
+.website-title-header{
+    display:flex;
+    align-items: center;
+}
+
+.website-name h1{
+    font-size: 30px;
+}
+
+.website-logo{
+    width:20px;
+}
+
+.website-logo img{
+    width:100%;
+}
+
+.top-nav-menu{
+    width:38%;
+}
+.top-nav-menu-list{
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    height:100%;
+    justify-content: space-evenly;
+}
+
+.top-nav-menu-list li a{
+    text-decoration: none;
+    color:black;
+}
+
+/* Page Header */
+
+.page-header{
+    margin-top:74px;
+    height:70%;
+    display:flex;
+    background-color: rgb(255, 192, 23);
+}
+
+.header-title{
+    flex-grow:1;
+    /* Without below, flex grow = 1 doesn't bifurcate in equal halves */
+    flex: 1 1 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.header-title div{
+    margin:10px 0;
+}
+
+.header-anim{
+    flex-grow:1;
+    background-image: url("medium-anim-still.PNG");
+    background-position: center;
+    background-size: cover;
+    flex: 1 1 0px;
+}
+
+.header-quote-1{
+    font-size:100px;
+}
+
+.header-quote-2{
+    font-size:24px;
+    color: rgb(65, 63, 63);
+}
+
+.header-button button{
+    padding:10px 43px;
+    border-radius: 50px;
+    background: rgb(29, 29, 29);
+}
+
+.header-button a{
+    color:white;
+    text-decoration: none;
+    font-size:20px;
+}
+
+/* Trending Section */
+
+.trending-section{
+    padding: 50px;
+    border-bottom:solid 1px rgb(156, 156, 156)
+}
+
+.trending-title{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left:50px;
+    margin-bottom: 20px;
+}
+
+.trending-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    display:flex;
+    width:350px;
+    height:150px;
+    margin-bottom: 20px;
+}
+
+.card-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-author{
+    display: flex;
+    align-items: center;
+}
+
+.card-details{
+    display: flex;
+    align-items: center;
+    color:rgb(94, 93, 93);
+}
+
+.card-author-image{
+    margin-right:5px;
+    height:30px;
+    width:30px;
+    border-radius: 40px;
+    background-image: url(https://www.onthisday.com/images/people/oscar-wilde-medium.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-number{
+    font-size:1.8rem;
+    color:rgb(184, 184, 184);
+    font-weight: 600;
+    padding:0 15px;
+}
+
+.card-title{
+    font-weight:bold;
+    font-size:1.1rem;
+}
+
+/* Main body */
+
+.main-body{
+    display: flex;
+}
+.articles{
+    width:60%;
+    padding:80px 0 80px 80px;
+}
+
+.article{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:40px;
+}
+
+.article-image{
+    width:180px;
+    height:120px;
+    margin-left: 30px;
+    background-image: url(https://thumbs.dreamstime.com/b/idyllic-green-fields-vibrant-blue-sky-panoramic-landscape-vast-hills-fluffy-white-clouds-76383482.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main aside */
+.main-aside{
+    position:sticky;
+    top:30px;
+    /* Without this, sticky won't work with flex */
+    align-self: flex-start;
+    width:40%;
+    padding:75px 40px;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-aside h4{
+    margin-bottom:10px;
+}
+
+.tags div{
+    padding:5px 7px;
+    color:rgb(75, 74, 74);
+    border: 1px solid rgb(126, 125, 125);
+    margin-bottom: 10px;
+}
