@@ -1,0 +1,24 @@
+
+.container{
+    background-color: orange;
+    height:300px;
+    width:300px;
+    /* margin:auto; */
+    /* transform:rotateZ(45deg); */
+    /* transform:scaleX(2); */
+    /* transform: skewX(40deg); */
+    /* Existence mein hi transition se aayega */
+    /* And jab hover hataenge toh bhi itna time lega */
+    transition-duration: 1s;
+}
+
+
+.container:hover{
+    /* transform:rotateX(90deg) rotateY(90deg) rotateZ(90deg) ; */
+    /* transform: translateX(500px); */
+    /* transform: translate3d(12px, 120px, 240px); */
+    /* The below is equivalent to the 3 rotateX,Y,Z above */
+    transform: rotate3d(1, 1, 1, 45deg);
+    transition-duration: 1s;
+}
+
