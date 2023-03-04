@@ -1,5 +1,0 @@
-Grid Layouts:-
-
-- 2-dimensional elements layout.
-- Grid layouts will work on rows and columns.
-- Indexing starts from 1.
