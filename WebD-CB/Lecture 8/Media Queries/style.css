@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+}
+
+body{
+    perspective: 100px;
+}
+
+.flex-container{
+    display: flex;
+    margin:auto;
+    width:60%;
+}
+
+.container{
+    width:200px;
+    height:200px;
+    margin:4%;
+    position: relative;
+    transform-style:preserve-3d;
+    transition-duration: 1s;
+}
+
+.container:hover{
+    transform: rotateY(180deg);
+    transition-duration: 1s;
+}
+
+.side{
+    position: absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+}
+
+.side-a{
+    background-color: orange;
+}
+
+.side-b{
+    background-color: red;
+    transform: rotateY(180deg);
+}
+
+/* Applying Mddia Queries */
+/* Check from Git */

@@ -1,0 +1,3 @@
+Media queries:- Check from git
+Animations:- Every animation has a start time and an end time.
+For every user, the time he joins the website, his time starts from 0.

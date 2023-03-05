@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.container{
+    background-image: url('https://wallpaperaccess.com/full/269150.jpg');
+    width:100vw;
+    height:100vh;
+    animation: backgroundMove 6s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+
+.rocket{
+    background:url('https://mpng.subpng.com/20180301/laq/kisspng-rocket-launch-cartoon-rocket-vector-5a9844bc5e5b08.9227064015199285083865.jpg') blue;
+    background-position:center;
+    background-size: cover;
+    height:100px;
+    width:100px;
+    position:absolute;
+    top:400px;
+    left:600px;
+    transform: rotateZ(40deg);
+    animation-name: rocketMove;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rocketMove {
+    0%{
+        top:500px;
+    }
+    50%{
+        top:450px;
+    }
+    100%{
+        top:500px;
+    }
+}
+
+@keyframes backgroundMove {
+    100%{
+        background-position:200% 0%;
+    }
+}
