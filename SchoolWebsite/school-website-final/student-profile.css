@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+    /* outline: 1px solid red; */
+    outline-offset: -1px;
+
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+/* Top navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:1%;
+    background-color: rgb(193, 255, 234);
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 100;
+}
+
+.navbar-main{
+    width:70%;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.navbar-menu{
+    width:20%;
+}
+.navbar-menu ul{
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap:wrap;
+}
+
+/* Main sidebar */
+.main-body{
+    display:flex;
+    height:100%;
+    margin-top:57px;
+}
+.main-aside{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:fixed;
+    left:0;
+    border-right:1px solid rgb(162, 161, 161);
+}
+
+.main-aside-menu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width:95%;
+    height:50%;
+    margin: 30px 10px;
+}
+
+.main-aside-menu div{
+    width:100%;
+}
+
+.main-aside-menu a:link, a:visited {
+    background-color: #0da460;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    width:100%;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size:1.2rem;
+    /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+}
+
+    .main-aside-menu a:hover, a:active {
+    background-color: rgb(25, 98, 65);
+    box-shadow: none;
+}
+
+/* Main body */
+.main-body-main{
+    padding:30px;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    margin-left:186px;
+}
+
+/* Student profile header */
+
+.student-profile-header{
+    display:flex;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 55%, rgba(0,255,207,1) 100%);
+    color:white;
+    padding:20px;
+    /* justify-content: spa; */
+}
+
+.student-image{
+    width:200px;
+    height:200px;
+    background-image:url('https://www.irishtimes.com/resizer/SmxgbQ6uare8cwxz0bGi94tWcPM=/1600x1600/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/3MS3PYEKJI2N533Z3ZG6VJ2RKU.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius:100%;
+}
+
+.student-profile-title{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left:5%;
+}
+
+.student-title-name{
+    font-size: 4rem;
+    font-weight:600;
+}
+
+.student-title-description{
+    font-size:1.3rem;
+}
+
+/* Student Profile Table */
+
+.student-profile-table{
+    margin-top:30px;
+    background-color: rgb(230, 251, 243);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding:30px;
+}
+
+.student-profile-table table{
+    width:100%;
+}
+
+.student-profile-table table td{
+    padding:5px;
+}
+
+/* Student Page Side Menu */
+.student-page-side-menu{
+    flex-grow:1;
+}
+.student-menu-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width:75%;
+    height:40%;
+    margin: 30px auto;
+}
+
+.student-menu-card div{
+    width:100%;
+}
+
+.student-menu-card a:link, a:visited {
+    background-color: #bd1c75;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    width:100%;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size:1.4rem;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;}
+
+.student-menu-card a:hover, a:active {
+    background-color: rgb(206, 77, 178);
+    box-shadow: none;
+}
+
+
