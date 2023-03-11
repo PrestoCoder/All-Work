@@ -1,0 +1,17 @@
+- Strongly typed vs Weakly typed
+Strongly typed means all variables have specific types, and are stored inflexibly in the amount of space that is assigned to that variable.
+JS is less strongly typed, or say weakly typed, as all different types of values don't require different types of variables.
+JS requires browser to run.
+
+- ECMA Script (ES) is the version name of JS. ES-5 is compatible with most browsers. 
+
+-Data types in JS
+Number(combination of int, float and double)
+String(String and char combined)
+Boolean
+Function
+undefined
+symbol(won't study)
+object
+
+
