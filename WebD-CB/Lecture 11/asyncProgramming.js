@@ -33,6 +33,3 @@ setTimeout(function() {
 // multithreading. We can push more than one thread onto the browser or node.
 
 // latentflip.com -> Visualization of  the above
-
-
-
