@@ -1,0 +1,4 @@
+In copy
+- All details about an object are present in its prototype.
+- All data types are functions. Ex:- Array.prototype -> contains constructor for array, forEach method.
+- 

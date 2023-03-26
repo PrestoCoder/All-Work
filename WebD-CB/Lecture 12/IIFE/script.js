@@ -25,6 +25,8 @@ let details = (() => {
 
     return {
         updateAge: updateAge,
+        // Returning just to see whether the value gets changed using updateAge function
+        // If not passed, it'll completely be locked
         person:person
     }
 

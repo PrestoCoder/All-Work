@@ -14,4 +14,8 @@ let sum = (a, b) => {
     return a+b;
 }
 
+// If one line return statement, no need to write return explicitly
+let mul = (a, b) => a*b;
+console.log(mul(2, 3));
+
 console.log(sum(10, 20));
