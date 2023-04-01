@@ -1,4 +1,6 @@
 In copy
 - All details about an object are present in its prototype.
 - All data types are functions. Ex:- Array.prototype -> contains constructor for array, forEach method.
-- 
+
+Study event loop, callbacks and Promises, and see how promises solve problem of callbacks.
+Also check how after completing downloads callbacks and promises work.
