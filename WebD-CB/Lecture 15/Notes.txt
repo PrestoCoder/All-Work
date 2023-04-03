@@ -1,0 +1,24 @@
+DOM Manipulation:-
+DOM - Document Object Model.
+HTML ka poora structure (DOM Tree).
+HTML -> (head, body -> (h1, footer, div -> (header, main)))
+
+To Create, read, Add and Delete (CRAD) anything from DOM is called DOM Manipulation.
+
+Window - BOM(Browser Object Model), a web API
+What is the purpose?
+To give (restriced) access to the browser.
+
+
+
+Event Listener:-
+
+Key press,
+Mouse:- Click, dbl click, hover, 
+Scroll
+
+Are all events.
+
+
+------
+Copy event cycle code from github

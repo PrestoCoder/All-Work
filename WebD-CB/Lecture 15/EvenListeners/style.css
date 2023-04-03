@@ -1,0 +1,22 @@
+.changeColor{
+    background-color: black;
+    color:white
+}
+
+.grandfather{
+    background-color: green;
+    height:50%;
+    width:50%;
+}
+
+.father{
+    background-color: orange;
+    height:50%;
+    width:50%;
+}
+
+.mother{
+    background-color: red;
+    height:50%;
+    width:50%;
+}
