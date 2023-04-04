@@ -1,0 +1,18 @@
+.container{
+    background-color: red;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    justify-content: space-between;
+}
+
+.item{
+    background-color: blue;
+    margin:10px;
+    color:white;
+    height:100px;
+    width:100px;
+    border:1px black solid;
+    font-size:2rem;
+}
