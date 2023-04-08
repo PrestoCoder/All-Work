@@ -1,0 +1,24 @@
+jQuery is made for DOM manipulation and requests.
+
+Jquery is to JS what STL is to C++.
+Thus, it provides built in functions.
+Therefore it is a JS library.
+
+We need to download Jquery.
+Can downlaod compressed or uncompressed, the former removing spaces and other unnecessary formatting.
+
+Now we'll do all that we did to manipulate DOM.
+CRUD operations, Add parent, child, next sibling, previous sibling,
+classes add/remove
+attributes add/remove
+events - click, hover, dblclick.
+
+But using jQuery.
+---------------------
+
+For using jQuery, we need to first wrap the element inside jQuery, and then call the jQuery function.
+jQuery(element).add()
+
+And $ is synonymous with jQuery.
+Thus,
+    the above is same as $(element).add

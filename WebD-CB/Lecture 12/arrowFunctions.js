@@ -19,3 +19,6 @@ let mul = (a, b) => a*b;
 console.log(mul(2, 3));
 
 console.log(sum(10, 20));
+
+
+// Note:- arrow functions' this will always point to window object, as they're stateless functions.
