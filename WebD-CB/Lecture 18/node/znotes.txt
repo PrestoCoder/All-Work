@@ -1,0 +1,8 @@
+- Node offers a place to run the console(browser waala) outside of the browser.
+- It offers file handling, unlike the browser.
+- It is a framework, and there are some rules to write code on it.
+
+- We can get others' code from npm and yarn.(package manager)
+- This open community of npm and yarn is based on github.
+- But to search is difficult.
+- Thus, we download npm, and use that to use other's code.

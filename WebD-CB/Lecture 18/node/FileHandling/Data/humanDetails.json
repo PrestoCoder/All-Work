@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Rohan",
+        "age": "23",
+        "hobby": "music"
+    },
+    {
+        "name": "Vedant",
+        "age": "22",
+        "hobby": "velapanti"
+    },
+    {
+        "name": "Avitrr",
+        "age": "25",
+        "hobby": "nuktacheeni"
+    },
+    {
+        "name": "Dakshesh",
+        "age": "22",
+        "hobby": "timepass"
+    }
+]
