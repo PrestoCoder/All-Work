@@ -1,0 +1,11 @@
+subtract,
+dog, 
+ulib1({})
+
+add, 
+billi, 
+subtract, 
+dog, 
+lib1({})
+
+// Check why the 2nd module exports syntax creates circular dependency.
