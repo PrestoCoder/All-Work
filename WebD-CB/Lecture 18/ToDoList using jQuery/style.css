@@ -1,4 +1,4 @@
-/* *{
+*{
     padding:5px;
     margin:0;
     outline:1px solid red;
@@ -11,6 +11,10 @@ main{
     text-align: center;
     font-family:sans-serif;
     font-size: 1.2rem;
+}
+
+.inputTask{
+    width:80%;
 }
 
 span{
@@ -29,6 +33,17 @@ ul{
     display:flex;
     justify-content: space-between;
     align-items: centre;
+    /* width:70%; */
+}
+
+.taskMain{
+    /* width:100px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.task{
+    background-color: white;
 }
 
 .item:first-child .taskButtons .upArrow{
@@ -37,4 +52,8 @@ ul{
 
 .item:last-child .taskButtons .downArrow{
     visibility: hidden;
-} */
+}
+
+.taskChecked{
+    text-decoration: line-through;
+}
