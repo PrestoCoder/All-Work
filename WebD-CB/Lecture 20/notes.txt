@@ -1,0 +1,19 @@
+Quora page:-
+1.) Landing page
+    - login
+    - About data
+    - Topics
+        - Science and technology
+        - Business
+        - Marketing
+        - Sports
+        - Lifestyle
+    - Footer
+    - Sign up. - Not without server knowledge
+
+2.) Dashboard (Appears after login)
+    - Select topics to read about.(only agar pehli baar login kiya hai)
+    - Create question
+    - Answer question
+        - heading, text, img
+    - Comment & upvote

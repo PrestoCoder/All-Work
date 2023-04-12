@@ -24,12 +24,13 @@ fs.writeFile(
         encoding: 'utf-8',
         flag:'w'            // Bcoz we're writing to that file.
     },
-    (err) => { // Call back function
+    // All node built-in callbacks are error first, i.e., their first argument is error.
+    // So, for all callbacks, we put a check that if we get an error, we throw it.
+    // Otherwise, we do the work.
+    // Call back function
+    (err) => {
         if(err) throw new Error("Nahi likh paye")
         console.log("Sahi hai! Ho gya sab");
     }
 )
 
-// All node built-in callbacks are error first, i.e., their first argument is error.
-// So, for all callbacks, we put a check that if we get an error, we throw it.
-// Otherwise, we do the work.

@@ -1,0 +1,39 @@
+*{
+    padding:0;
+    margin:0;
+    outline:1px red solid;
+    outline-offset:-1;
+}
+
+main{
+    width:50%;
+    margin: 100px auto;
+    font-size: 1.2rem;
+}
+
+header{
+    text-align: center;
+}
+
+footer ul{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.login-section{
+    display:flex;
+}
+
+.sign-up-normal{
+    width:50%;
+    text-align:center;
+}
+
+.login-normal{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
