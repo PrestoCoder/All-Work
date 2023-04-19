@@ -1,2 +1,5 @@
 .DS_Store
 WebD-CB/.DS_Store
+*node_modules
+*package.json
+*package-lock.json

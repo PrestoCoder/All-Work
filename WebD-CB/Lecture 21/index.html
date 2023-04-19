@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <form action="/addtodo" method="POST">
+        <!-- Below, the name is the name of the key, either in GET url, or in body of req through POST -->
+        <input type="text" name ="newtask">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

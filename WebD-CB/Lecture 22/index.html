@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <form action="/addtodo" method="POST">
+        <!-- Below, the name is the name of the key, either in GET url, or in body of req through POST -->
+        <input type="text" name ="newtask" id = "newtask">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="taskList">
+
+    </div>
+
+    <!-- cdn for axios, needs to be required before script.js -->
+    <!-- And it can't be required as require(axios), as we are using front end for that -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- This merely asks the browser to request for the script.js
+    However, the browser asks for this file at the path http://localhost:4444/script.js
+    However, we haven't take care of that in the server. -->
+    <script src="/js/script.js"></script>
+</body>
+</html>

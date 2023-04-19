@@ -1,0 +1,23 @@
+nodemon restarts server every time a change is made to the server code, that is app.js.
+Otherwise, we'll have to shut server and then restart again.
+
+other than 404: Request response cycle completed
+404: Cannot get response
+
+When client sends a "GET" request, server can send data only in 2 ways:- params, query params
+(More in handwritten notes)
+
+Search how to create snippets
+----
+const path = require('path');
+const express = require('express');
+const app = express();
+const PORT = 4444;
+
+app.use(express.urlencoded({extended:true}));
+
+
+app.listen(PORT, () => {
+    console.log("http://localhost:4444/")
+})
+----
