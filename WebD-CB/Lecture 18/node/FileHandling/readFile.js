@@ -22,6 +22,7 @@ fs.readFile(
         if(err) throw new Error("Nahi padh paye")
         // This would be required if we don't give the encoding.
         //  Bcoz otherwise, it will return the data in hexa.
+        // By default, if the encoding is provided, the data is in string format.
         console.log(data.toString());
         console.log("Sahi hai! Padh li file");
     }
