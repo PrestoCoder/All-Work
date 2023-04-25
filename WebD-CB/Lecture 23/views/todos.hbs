@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">    
+    <title>Document</title>
+</head>
+<body>
+
+    {{!-- Picks up file from the partials folder, always --}}
+    {{!-- If I include a JS here, it will be able to pick class/id from navbar code --}}
+    {{!-- It basically gets the code from there aur idhar patak deta hai --}}
+    {{!-- However, this reloads the page, doesn't function as AJAXs --}}
+    {{>navbar}}
+
+    <h1>All todos</h1>
+    <ul>
+        {{#each todos as |t|}}
+            <li>Name: {{t.task}}, id: {{t.id}} </li> 
+        {{/each}}
+    </ul>
+   
+</body>
+</html>
