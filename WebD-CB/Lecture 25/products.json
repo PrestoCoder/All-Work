@@ -1,0 +1,10 @@
+[{
+    "name": "Book",
+    "price": 40.12,
+    "description": "This is an awesome book"
+},
+{
+    "name": "Laptop",
+    "price": 534.12,
+    "description": "This is an awesome latptop"
+}]
