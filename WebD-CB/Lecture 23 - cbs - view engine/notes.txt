@@ -1,0 +1,17 @@
+Client side rendering(CSR):- Send data to client, it'll put arrange that in order
+1. API and DOM manipulation
+(Get data API and display using DOM.)
+
+2. Javascript required on client class.
+
+vs Server side redering(SSR):-
+1. Generate whole page( including JS) on server, and throuhgh onto the screen.
+That is, entirep page gets generated at backend and we send the pae to client
+
+2. Required templating engine, egs:- ejs, pubg, .hbs
+_
+Till now we were using 
+Agar JS ni chaiya html pe, toh saara page server pe banega
+
+
+Git se:- FB waala part (poori implementation using hbs(handlebars))
