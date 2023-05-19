@@ -33,6 +33,7 @@ app.get('/gettodo',(req,res)=>{
 app.post('/addtodo',(req,res)=>{
     const {newtask} = req.body;
     todos.push(newtask);
+    console.log(todos);
     res.redirect('/gettodo');
 })
 

@@ -20,14 +20,17 @@ app.use((req,res,next)=>{
 
 // Path: ['/listen','/listen/a','/listen/a/b/c/d'] works on these
 // Path: ['/listena','/listena/a','/listen1/a/b/c/d'] Doesn't work on these
+// And obviously, / pe bhi kaam ni karega
 app.use('/listen',(req,res,next)=>{
+    req.cnt = 1;
     console.log("Alexa is converting the audio to text");
     // res.send("Sunn Lia meine jo tune kaha");
     next();
 })
 
 app.get('/listen',(req,res)=>{
-    res.send("Sunn lia meine jo tune bola");
+    res.send(`Hello World ${req.cnt}`);
+    // res.send("Sunn lia meine jo tune bola");
 })
 
 app.get('/',(req,res)=>{

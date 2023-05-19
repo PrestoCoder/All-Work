@@ -1,3 +1,7 @@
+{{!-- Bcoz this is rendered using hbs, all the arguments sent while rendering are accessible globally in this file --}}
+{{!-- Eg:- title, name, hobby can be used anywhere --}}
+{{!-- Even in the header, as done for title --}}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +13,7 @@
 </head>
 
 <body>
+    {{!-- This basically brings html code from navbar, and puts it here --}}
     {{> navbar}}
 
     <h1>Todo List</h1>

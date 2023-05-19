@@ -15,11 +15,20 @@ app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'index.html'));
 })
 
-app.post('/addtodo',(req,res)=>{
-    const {newtask} = req.body;
+// When data sent this way, inside network of inspect,
+// Request URL: http://localhost:4444/addtodo1?newtask=345345
+// Data visible in url. Thus, not safe.
+app.get('/addtodo1', (req, res) => {
+    const {newtask} = req.query;
     todos.push(newtask);
     res.redirect('/gettodo');
 })
+
+// app.post('/addtodo',(req,res)=>{
+//     const {newtask} = req.body;
+    // todos.push(newtask);
+//     res.redirect('/gettodo');
+// })
 
 app.listen(PORT,()=>{
     console.log(`http://localhost:`+PORT);

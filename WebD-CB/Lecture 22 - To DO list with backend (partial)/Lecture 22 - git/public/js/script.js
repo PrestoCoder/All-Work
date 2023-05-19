@@ -23,12 +23,14 @@ function addToTaskList(todos){
     taskList.innerText = '';
     todos.forEach((t)=>{
         let li = document.createElement('li');
-        li.innerText = t.name;
+        li.innerText = t;
+        // li.innerText = t.name
         taskList.appendChild(li);
     })
 }
 
 form.addEventListener('submit',async (ev)=>{
+    // So that the pressing of button doesn't send the POST request, and instead this does
     ev.preventDefault();
     let taskName = taskItem.value;
     // console.log(task);

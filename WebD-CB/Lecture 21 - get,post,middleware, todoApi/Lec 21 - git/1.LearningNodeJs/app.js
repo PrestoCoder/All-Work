@@ -1,10 +1,21 @@
 const path = require('path');
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 const PORT = 4444;
 
 // To see the body data of a POST request
+// If request format is x-www-form-urlencoded(postman), that is from form, then use below middleware
+// Otherwise, for json, use json body parser
+// Also, if we don't know the format, we can use both middlewares.
+// It'll automatically work for both types.
+
+// How are they both able to work together?
+// This is bcoz urlencoded works on requests with bodies having format of urlencoded only.
+// And so does bp.json, it works only for json req.body objects.
+// Thus, they can't interfere with each other.
 app.use(express.urlencoded({extended:true}));
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     res.send("Hello World");
@@ -30,6 +41,8 @@ app.get('/bye', (req, res) => {
 })
 
 // POST REQUEST
+// Do this using postman, encoded form data or json.
+// choose parser accordingly
 app.post('/',(req,res)=>{
     // console.log(req.body)
     const {contact,email} = req.body;

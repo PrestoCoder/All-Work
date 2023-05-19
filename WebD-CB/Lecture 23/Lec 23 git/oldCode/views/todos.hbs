@@ -15,6 +15,7 @@
 
     <h1>All Todos</h1>
     <ul>
+        {{!-- todos is an array, and each element is an object with fields task and id --}}
         {{#each todos as |t|}}
         <li>Name: {{t.task}}, id: {{t.id}}</li>
         {{/each}}

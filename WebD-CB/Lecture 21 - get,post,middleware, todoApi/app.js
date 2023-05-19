@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
-const PORT = 4444;
+const PORT = 8888;
 
 // To see the body data of a POST request
 // Because we're sending the data in body in encoded format.
@@ -11,12 +11,15 @@ app.use(express.urlencoded({extended:true}));
 
 
 // GET request using params
+// http://localhost:4444/hello/rohan - use this to check
 app.get('/hello/:name', (req, res) => {
     // res.send("Hello world");
+    // The below is equivalent to "Hello" + req.params.name
     res.send(`Hello ${req.params.name}`);
 }) 
 
 // GET request using Query parameters
+// http://localhost:4444/bye?name=rohan&age=25 - use this to check
 app.get('/bye', (req, res) => {
     
     req.query.age ?
@@ -41,4 +44,4 @@ app.post('/', (req, res) => {
 
 app.listen(PORT, () => {
     console.log("http://localhost:4444/")
-})
+}) 

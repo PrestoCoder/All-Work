@@ -1,8 +1,11 @@
+// It differs from app.js in that this uses db, whereas app.js stores a local copy of todos,
+// which is lost on restarting the server.
 const path = require('path');
 const express = require('express');
 const app = express();
 const PORT = 4444;
 const bodyParser = require('body-parser');
+// This is used to provide unique id.
 const { v4: uuidv4 } = require('uuid');
 const TodosDB = require('./database/scripts/todos');
 
@@ -21,7 +24,6 @@ app.get('/gettodo',(req,res)=>{
     // res.send(todos);
     TodosDB.getTask()
         .then((data)=>{
-        
             res.send(data);
         })
         .catch(err=>{
