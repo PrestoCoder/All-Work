@@ -1,0 +1,11 @@
+Routers - Categorise server endpoints using folder.
+The only thing we can't do with routes is we can't listen using routes.
+- Request hits app.js.
+- It routes it to Routers.
+- The router calls functions from handlers folder.
+
+
+method-override:-
+deleterequest
+putrequest
+patchrequest
