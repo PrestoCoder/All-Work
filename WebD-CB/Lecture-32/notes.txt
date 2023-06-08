@@ -1,0 +1,23 @@
+Authentication using PassportJS
+
+Static part of website is whatever is there in the public folder, html, css, JS
+
+But beyond that, authentication would be required.
+
+There are multiple strategies in PassportJS through which we can login
+i.e., through Username/password, FB, twitter, Google, etc.
+
+Inside package of passport itself we define the strategies.
+There are 538 strategies provided by PassportJS.
+
+But we will be mostly be using 3-4, like local, google, FB, Apple, etc.
+
+To install say local, npm install passport-local.
+
+NOTE****
+In the login/signup form (for local login), name should always be 'username' and 'password'.
+<input id='username' name='username' placeholder="Username"></input>
+<input id='password' name='password' placeholder="Password"></input>
+
+And we use bcrypt to encrypt decrypt password.
+

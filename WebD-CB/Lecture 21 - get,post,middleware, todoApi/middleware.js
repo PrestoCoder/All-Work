@@ -28,9 +28,8 @@ app.use((req, res, next) => {
     next();
 })
 
-// Path: [/'listen', 'listen/b', 'listen/a/b/c'] works on these
-// Path: [/'listen1', 'liste2/b', 'listen1/a3/b/c'] doesn't work on these
-// Also, the middlewares will work for every /path, but the 'get' will work only for /path.
+// Path: ['/listen', 'listen/b', 'listen/a/b/c'] works on these
+// Path: ['/', '/listen1', 'liste2/b', 'listen1/a3/b/c'] doesn't work on these
 app.use('/listen', (req, res, next) => {
     console.log("Alexa is converting audio to text");
     req.count++;

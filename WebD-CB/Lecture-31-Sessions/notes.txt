@@ -1,0 +1,12 @@
+Cookies
+We don't directly use cookies, coz anybody can access it and change it in the browser.
+Hence to prevent this, we use express sessions.
+Basically sessions helps us store cookies related data directly on the server.
+And to check which user is it, server sends a session ID that gets stored in the cookies.
+When we ping the server, request takes cookies with it, and the server with the sessionID retrieves from within its
+own mapping the data of that particular user.
+
+But the map is stored on our RAM.
+
+Can be stored on mongoDB using connect-mongodb-store (npm i)
+

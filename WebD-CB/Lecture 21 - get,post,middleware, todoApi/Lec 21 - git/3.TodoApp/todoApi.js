@@ -1,3 +1,6 @@
+// Flow:-
+// Submit click webpage -> POST request '/' -> add tasks to list -> redirect to '/gettodo' -> send todos List.
+
 const path = require('path');
 const express = require('express');
 const app = express();

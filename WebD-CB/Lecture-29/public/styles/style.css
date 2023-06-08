@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    color: white;
+    background-color: rgba(0, 128, 128, 0.692);
+    padding: 10px;
+}
+
+.navItem{
+    margin-right: 20px;
+}
+
+.navItem:link{
+    text-decoration: none;
+    color: white;
+}
+
+.navItem:visited{
+    color: white;
+}
+
+.navItem:hover{
+    text-decoration: underline;
+}
+
+.postsForm{
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+.postsForm input{
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0px;
+}
