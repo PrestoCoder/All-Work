@@ -1,0 +1,22 @@
+{{!-- Bcoz this is rendered using hbs, all the arguments sent while rendering are accessible globally in this file --}}
+{{!-- Eg:- title, name, hobby can be used anywhere --}}
+{{!-- Even in the header, as done for title --}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    {{!-- This basically brings html code from navbar, and puts it here --}}
+    {{> navbar}}
+
+    <h1>Todo List</h1>
+    {{name}} : {{hobby}}
+</body>
+</html>

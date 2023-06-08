@@ -1,0 +1,7 @@
+<<<<<<< HEAD:WebD-CB/.gitignore
+node_modules/
+package-lock.json
+=======
+./node_modules
+./package-lock.json
+>>>>>>> 4d5657f61dac2b1741f84217d7a4dbbff2d6fb2e:CodingBlocks-WebDevelopment/.gitignore
