@@ -1,0 +1,15 @@
+Sockets and Chatting app:-
+
+Used mainly for real time chatting.
+When I message someone, the traditional client - server - client response might not be the best approach. (check why)
+For this we use sockets.
+Socket is a layer for communication.
+It is required both for client and server.
+On client it is required using script.
+
+We need to seek server's permission to come out of server-client communication.
+
+Emit - For client/server to send message to server/client.
+
+Broadcast - For sending message to multiple sockets (I think only server can do this.)
+For this, on server, we do io.emit, instead of socket.emit

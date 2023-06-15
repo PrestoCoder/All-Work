@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="css/main-style.css">
+</head>
+<body> 
+    {{>navbar}}
+    <main>
+        <div class="creat-post">
+            <span class = "start-post-header">
+                Start a post
+            </span>
+            <form action="/create-post" method="post">
+                <textarea name="post-text" cols="50" rows="5" class="post-text-area">
+                </textarea>
+                <button type="submit" class="post-button">
+                    Post
+                </button>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>

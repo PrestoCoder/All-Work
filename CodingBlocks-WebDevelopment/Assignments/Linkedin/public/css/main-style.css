@@ -1,0 +1,25 @@
+body{
+    background-color: #f3f2ef;
+}
+
+main{
+    margin-top:50px;
+    display:flex;
+    justify-content: center;
+}
+
+.start-post-header{
+    font-size:1.2rem;
+}
+
+.post-text-area{
+    margin: 5px 0;
+    border-radius: 5px;
+    border:none;
+}
+
+.post-button{
+    display: block;
+    font-size: 1.15rem;
+    padding:5px 7px;
+}
