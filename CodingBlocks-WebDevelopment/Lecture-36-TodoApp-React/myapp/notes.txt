@@ -1,0 +1,12 @@
+in-line styles not getting applied using className, getting applied rather using styles declared inside component.
+
+use-effect hook:-
+
+Whenever the component is re-rendered, the function passed in this hook executes at the end.
+We do API calls using this. When everything is rendered, get the data and present it.
+
+And if we pass an(or more) states in an array also, it will execute only when the array is tampered with.
+
+React router is used to change URL for different pages, bcoz in React, page never loads more than once, and thus,
+its natural tendency is to not reload, and thus, its URL remains the same, but this is a hinderance,
+as we won't be able to bookmark pages then.

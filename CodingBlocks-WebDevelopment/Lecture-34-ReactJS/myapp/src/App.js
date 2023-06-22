@@ -1,24 +1,18 @@
-// All import statements go at the top
-// import is analogous to require in normal JS
-import './App.css'
-import React from 'react'
-
-// JS
-let randomNumber = Math.floor(Math.random() * 10)
+import React from 'react';
+import  './App.css';
 
 const App = () => {
   return (
     <div>
-      {/* Use curly braces to insert JS code */}
-      <h1>Yeh hai header - {randomNumber}</h1>
-      <div className = "div-1">
-        Nested element - 1
+      <div className="div1">
+        I am the APP Component
       </div>
-      <div className = "div-2">
-        Nested element - 2
+      <div className="div2">
+        Another div inside app component
       </div>
     </div>
   )
 }
+
 
 export default App

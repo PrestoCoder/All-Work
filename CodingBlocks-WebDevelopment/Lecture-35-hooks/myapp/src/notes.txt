@@ -1,0 +1,31 @@
+// Notes
+// For passing data from parent to child, props is used.
+// For passing date from child to parent, or say, re-rendering something in parent based on action inside child.
+// For this, we can use useState.
+// We can pass setState to child, which when called will update todos.
+// But as a good coding practice, we never pass it directly, and instead encapsulate it and then pass it inside a function.
+
+
+// Read about props, {} while passing as props, using id.
+
+Stateless vs Statefull
+Components in which useState has been used - Statefull
+In which not been used - Stateless
+
+Controlled vs Uncontrolled components:-
+Controlled - controlled by parents
+Uncontrolled - Not Controlled '' '' ''.
+
+When we put html elements inside React components, they are passed inside props.children to the component between whose
+opening and closing brackets they were passed.
+
+To prevent extra div, we used wrapper, in-built(React.Fragment or  simply<>) or our own.
+
+2nd hook - useRef
+Used to create a reference to an element on the DOM.
+Any changes made to the ref will be immediately re-rendered.
+
+Normal css import will apply to all components rendered in root on index.html
+TO prevent, rename to todolist.module.css
+And while importing, 
+        import styles from './todolist.module.css'
