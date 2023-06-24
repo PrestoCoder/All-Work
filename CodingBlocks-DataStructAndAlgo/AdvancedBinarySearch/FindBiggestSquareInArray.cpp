@@ -2,7 +2,7 @@
 #include <limits.h>
 using namespace std;
 
-
+// My Approach - Not related to Binary Search
 int findMaxK(int arr[], int n, int start, int end) {
     if(n <= 0) {
         return 0;
@@ -21,8 +21,9 @@ int findMaxK(int arr[], int n, int start, int end) {
     int subMaxK = k1 > k2 ? k1 : k2;
     int totalMaxK = maxK > subMaxK ? maxK : subMaxK;
     return totalMaxK;
-
 }
+
+// Advanced Binary Search approach
 
 int main() {
     // int arr[] = {1, 5, 6, 7, 4, 3, 1, 4, 3, 5};

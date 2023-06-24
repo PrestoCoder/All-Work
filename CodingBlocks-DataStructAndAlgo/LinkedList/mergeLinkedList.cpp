@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class LLNode{
+class LLNode {
     int data;
     LLNode* next;
 
@@ -40,15 +40,15 @@ LLNode* mergeSortedLL(LLNode* h1, LLNode* h2) {
     if(h2 == NULL) {
         return h1;
     }
+    LLNode* newHead = new LLNode();
     if(h1 -> getData() <= h2 -> getData()) {
-        LLNode* newHead = new LLNode();
         newHead -> setData(h1 -> getData());
         newHead -> setNextNode(mergeSortedLL(h1 -> getNextNode(), h2));
     } else {
-        LLNode* newHead = new LLNode();
         newHead -> setData(h2 -> getData());
         newHead -> setNextNode(mergeSortedLL(h1, h2 -> getNextNode()));
     }
+    return newHead;
 }
 
 int main() {
@@ -57,13 +57,13 @@ int main() {
     LLNode* head = new LLNode();
     int data;
     cin >> data;
+    head -> setData(data);
     LLNode* temp = head;
     for(int i = 1; i < n1; i++) {
         
         LLNode* newNode = new LLNode();
         temp -> setNextNode(newNode);
 
-        int data;
         cin >> data;
         newNode -> setData(data);
         temp = newNode;
@@ -73,6 +73,7 @@ int main() {
     cin >> n2;
     LLNode* head2 = new LLNode();
     cin >> data;
+    head2 -> setData(data);
     temp = head2;
     for(int i = 1; i < n2; i++) {
         
@@ -90,6 +91,8 @@ int main() {
         if(mergedHead != NULL) {
             cout << mergedHead -> getData() << endl;
             mergedHead = mergedHead -> getNextNode();
+        } else {
+            break;
         }
     }
 }

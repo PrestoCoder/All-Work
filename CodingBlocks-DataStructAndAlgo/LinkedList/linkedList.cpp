@@ -1,23 +1,9 @@
 #include<bits/stdc++.h>
 #include<iostream>
+#include "LLNode.h"
 using namespace std;
 
-class LLNode {
-    public:
-
-        int data;
-        LLNode* next;
-    
-        LLNode() {
-            this -> data = 0;
-            this -> next = NULL;
-        }
-
-        LLNode(int data) {
-            this -> data = data;
-        }
-};
-
+// Printing whole linked list
 void printLL(LLNode* head) {
     if(head == NULL) {
         cout << "NULL" << endl;
@@ -27,6 +13,7 @@ void printLL(LLNode* head) {
     printLL(head -> next);
 }
 
+// Summing up all Linked list nodes
 int sumLL(LLNode* head) {
     if(head == NULL) {
         return 0;
@@ -34,6 +21,7 @@ int sumLL(LLNode* head) {
     return head -> data + sumLL(head -> next);
 }
 
+// Finding length of the linked list
 int lengthLL(LLNode* head) {
     if(head == NULL) {
         return 0;
@@ -41,22 +29,21 @@ int lengthLL(LLNode* head) {
     return 1 + lengthLL(head -> next);
 }
 
-LLNode* merge2SortedLL(LLNode* head1, LLNode* head2) {
-    if(head1 == NULL) {
-        return head2;
+// Delete ith node
+LLNode* deleteNode(LLNode* head, int deletionIndex, int currIndex = 0) {
+    if(currIndex == deletionIndex) {
+        return head -> next;
     }
-    if(head2 == NULL) {
-        return head1;
-    }
-    LLNode* ans = NULL;
-    if(head1 -> data < head2 -> data) {
-        ans = head1;
-    }
+    LLNode* modifiedLL = deleteNode(head -> next, deletionIndex, currIndex + 1);
+    head -> next = modifiedLL;
+    return head;
 }
 
 int main() {
     // Inputting LLNode
     // Creating and chaining nodes until we enter -1
+
+    // Linked list 1
     int data;
     cin >> data;
     LLNode* head1 = new LLNode(data);
@@ -72,6 +59,7 @@ int main() {
         currNode = node;
     }
 
+    // Linked list 2
     cin >> data;
     LLNode* head2 = new LLNode(data);
     currNode = head2;
@@ -86,17 +74,16 @@ int main() {
         currNode = node;
     }
 
+    head1 = deleteNode(head1, 5);
+
     // Printing LL
-    // printLL(head);
+    printLL(head1);
 
     // LL Sum
     // cout << sumLL(head) << endl;
 
     // LL length
     // cout << lengthLL(head);
-
-    // Merging 2 sorted LL
-    printLL(merge2SortedLL(head1, head2));
 
     return 0;
 }
