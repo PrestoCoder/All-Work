@@ -13,7 +13,7 @@ int main() {
     cout << q1.front() << endl;
     // Returns element at the back of the queue
     cout << q1.back() << endl;
-    // Pops front most element
+    // Pops front most element, doesn't return anything
     q1.pop();
     cout << q1.front() << endl;
 }

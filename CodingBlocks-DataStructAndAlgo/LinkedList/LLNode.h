@@ -35,3 +35,17 @@ void printLL(LLNode* head) {
     cout << head -> data << "->";
     printLL(head -> next);
 }
+
+// We pass on the curr head to the recursive call.
+// In the call, we get that call's curr head to point to the passed prev head.
+// And then we pass that curr head to the next recursive call, and so on.
+// And we return the final node.
+LLNode* reverseLL(LLNode* head, LLNode* prevNode = NULL) {
+    if(head -> next == NULL) {
+        head -> next = prevNode;
+        return head;
+    }
+    LLNode* nextNode = head -> next;
+    head -> next = prevNode;
+    return reverseLL(nextNode, head);
+}
