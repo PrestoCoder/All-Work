@@ -81,6 +81,7 @@ void printBinaryTreeNodesZigZag(stack<BinaryNode*> s1) {
     printBinaryTreeNodesZigZag(s1);
 }
 
+// Post order
 // L R (S) - Print self after printing left and right trees
 void printPostOrderTraversal(BinaryNode* root) {
     if(root == NULL) {
@@ -91,24 +92,26 @@ void printPostOrderTraversal(BinaryNode* root) {
     cout << root -> data << " ";
 }
 
+// In order 
 // L(S)R - Print self after printing left and before right trees
-void printPostOrderTraversal(BinaryNode* root) {
+void printInOrderTraversal(BinaryNode* root) {
     if(root == NULL) {
         return;
     }
-    printPostOrderTraversal(root -> left);
+    printInOrderTraversal(root -> left);
     cout << root -> data << " ";
-    printPostOrderTraversal(root -> right);
+    printInOrderTraversal(root -> right);
 }
 
+// Pre order
 // (S) L R - Print self before printing left and right trees
-void printPostOrderTraversal(BinaryNode* root) {
+void printPreOrderTraversal(BinaryNode* root) {
     if(root == NULL) {
         return;
     }
     cout << root -> data << " ";
-    printPostOrderTraversal(root -> left);
-    printPostOrderTraversal(root -> right);
+    printPreOrderTraversal(root -> left);
+    printPreOrderTraversal(root -> right);
 }
 
 // Print Binary Tree Top view.
@@ -258,4 +261,107 @@ int heightOfBinaryTree2(BinaryNode* root) {
 void printBinaryTreeLeftView(BinaryNode* root) {
 
 }
+
+// Check if a route exists in Binary tree that sums to given number
+bool checkSum(BinaryNode* root, int sum) {
+    if(root == NULL) {
+        return true;
+    }
+    if(root ->left == NULL && root -> right == NULL) {
+        if(sum != root -> data) {
+            return false;
+        }
+        return true;
+    }
+    bool leftAns = checkSum(root -> left, sum - root -> data);
+    if(leftAns) {
+        return true;
+    }
+    bool rightAns = checkSum(root -> right, sum - root -> data);
+    return rightAns;
+}
+
+// Print all possible paths that sum to given number
+// My method - thoda complicated
+// Stack mein path vectors hain
+// Agar true returned from a path, uss stack ke saare paths mein root push_back
+
+// This approach more apt if we need to store the nodes themselves
+bool printSumPaths(BinaryNode* root, int sum, stack<vector<int>*>& s1) {
+
+    if(root == NULL) {
+        return false;
+    }
+
+    if(root -> left == NULL && root -> right == NULL) {
+        if(sum == root -> data) {
+            vector<int>* v1 = new vector<int>;
+            v1 -> push_back(root -> data);
+            s1.push(v1);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    stack<vector<int>*> pathStack;
+
+    bool leftAns = printSumPaths(root -> left, sum - root -> data, pathStack);
+    bool rightAns = printSumPaths(root -> right, sum - root -> data, pathStack);
+
+    for(int i = 0; i < pathStack.size(); i++) {
+        vector<int>* v1 = pathStack.top();
+        v1 -> push_back(root -> data);
+        s1.push(v1);
+        pathStack.pop();
+    }
+
+    return leftAns || rightAns;
+}
+
+// Sir ki approach
+// Print all possible paths that sum to given number
+void printPathSum(BinaryNode* root, int sum, string path = "") {
+    if(root == NULL) {
+        return;
+    }
+    if(root -> left == NULL && root -> right == NULL) {
+        if(sum == root -> data) {
+            path += to_string(root -> data);
+            cout << path << endl;
+            return;
+        }
+    }
+    printPathSum(root -> left, sum - root -> data, path + to_string(root -> data) + "->");
+    printPathSum(root -> right, sum - root -> data, path + to_string(root -> data) + "->");
+}
+
+
+// LCA - Lowest common ancestor
+// The common node which is the closest parent to two other nodes.
+// Brute force - O(N^2)
+// Check if elements exist, first on the left and then on right.
+// If both elements on different sides, then root LCA.
+// If both on one side only, then call recursion on that side.
+
+// Second Approach - O(N) - time, O(N) - space
+// Try to find first element, store its path in vector or whatever.
+// Then find 2nd element.
+// In their paths their would be many elements common.
+// The element that will be common, nearest to the elements will be LCA.
+
+//  
+
+
+
+//--------
+
+// Balanced binary tree
+// Every node a balanced subtree
+// Left and right subtrees height difference not more than 1.
+
+//---------
+
+// Complete tree - At every level, nodes should exist from left to right, 
+// Every level need not be completely filled, par nodes should run from left to right.
 

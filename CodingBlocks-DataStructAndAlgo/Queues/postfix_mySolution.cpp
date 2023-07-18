@@ -3,6 +3,9 @@
 #include<string>
 using namespace std;
 
+// This is my solution
+// A bit complicated than using stack
+
 int performOperation(int n1, int n2, char operatr) {
     if(operatr == '+') {
         return n1 + n2;

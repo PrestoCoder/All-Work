@@ -32,10 +32,10 @@ void quickSort(int arr[], int start, int end) {
     int index1 = start;
     int index2 = pivotIndex + 1;
     while(index1 < pivotIndex && index2 < end) {
-        if(arr[index1] <= pivot) {
+        if(arr[index1] < pivot) {
             index1++;
         } else {
-            if(arr[index2] <= pivot) {
+            if(arr[index2] < pivot) {
                 swap(arr[index1], arr[index2]);
                 index1++;
                 index2++;
