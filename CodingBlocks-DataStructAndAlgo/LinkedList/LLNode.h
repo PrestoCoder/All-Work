@@ -27,7 +27,7 @@ int lengthLL(LLNode* head) {
 }
 
 // Printing whole linked list
-void printLL(LLNode* head) {
+void printPrettyLL(LLNode* head) {
     if(head == NULL) {
         cout << "NULL" << endl;
         return;
@@ -48,4 +48,45 @@ LLNode* reverseLL(LLNode* head, LLNode* prevNode = NULL) {
     LLNode* nextNode = head -> next;
     head -> next = prevNode;
     return reverseLL(nextNode, head);
+}
+
+// Normal input and print LL
+LLNode* inputLL(int count) {
+	if(count == 0) {
+		return NULL;
+	}
+    LLNode* head = new LLNode();
+	int data;
+	cin >> data;
+	head -> data = data;
+	head -> next = inputLL(count - 1);
+    return head;
+}
+
+void inputLL2(LLNode* head, int count = 0) {
+    if(count == 0) {
+        int data;
+        cin >> data;
+        head = new LLNode(data);
+        inputLL2(head, count + 1);
+        return;
+    }
+    int data;
+    cin >> data;
+    if(data != -1) {
+        head -> next = new LLNode(data);
+        head = head -> next;
+        inputLL2(head);
+        return;
+    } else {
+        return;
+    }
+}
+
+void printLL(LLNode* head) {
+	if(head == NULL) {
+		return;
+	}
+	cout << head -> data << " ";
+	printLL(head -> next);
 }
